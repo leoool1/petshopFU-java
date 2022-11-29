@@ -1,0 +1,53 @@
+<th:block th:fragment="header">
+    <header class="header">
+        <div class="header-middle">
+            <div class="container">
+                <div class="header-left col-lg-2 w-auto pl-0">
+                    <button class="mobile-menu-toggler text-primary mr-2" type="button">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <a href="/" class="logo">
+                        <img th:src="@{data:image/png;base64,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}"  alt="logo">
+                    </a>
+                </div><!-- End .header-left -->
+
+                <div class="header-right w-lg-max">
+                    <div class="header-icon header-icon header-search header-search-inline header-search-category w-lg-max text-right">
+                        <a href="#" class="search-toggle search-button" role="button"><i class="icon-search-3"></i></a>
+                            <div class="header-search-wrapper">
+                                <input class="form-control search-input"  placeholder="Nhập sản phẩm cần tìm kiếm..." required>
+                                <button class="btn icon-search-3 p-0 search-button" type="submit"></button>
+                            </div><!-- End .header-search-wrapper -->
+                    </div><!-- End .header-search -->
+
+                    <div class="header-contact d-none d-lg-flex pl-4 ml-3 mr-xl-5 pr-4">
+                        <img alt="phone" th:src="@{/shop/images/phone.png}" width="30" height="30" class="pb-1">
+                        <h6>Hotline<a href="tel:#" class="text-dark font1">083 758 0585</a></h6>
+                    </div>
+
+                    <a href="" data-toggle="modal" data-target="#exampleModal" class="header-icon account-setting"><i class="icon-user-2"></i></a>
+
+                </div><!-- End .header-right -->
+            </div><!-- End .container -->
+        </div><!-- End .header-middle -->
+
+        <div class="header-bottom sticky-header d-none d-lg-block">
+            <div class="container">
+                <nav class="main-nav w-100">
+                    <ul class="menu">
+                        <li class="active">
+                            <a href="/">Trang chủ</a>
+                        </li>
+<!--                        <th:block th:each="brand : ${brands}">-->
+<!--                            <li><a href="/" th:text="${brand.name}">Trang chủ</a></li>-->
+<!--                        </th:block>-->
+                        <li class="float-right mr-0"><a href="/lien-he" class="px-4">Liên hệ</a></li>
+                        <li class="float-right"><a href="/doi-hang">Chính sách</span></a></li>
+                        <li class="float-right"><a href="/tin-tuc">Tin tức</a></li>
+                        <li class="float-right"><a href="/san-pham">Sản phẩm</a></li>
+                    </ul>
+                </nav>
+            </div><!-- End .container -->
+        </div><!-- End .header-bottom -->
+    </header><!-- End .header -->
+</th:block>
